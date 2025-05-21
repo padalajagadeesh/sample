@@ -1,0 +1,127 @@
+.dashboard-wrapper  
+  padding: 1.5rem 
+  display: flex 
+  flex-direction: column 
+  gap: 2rem 
+
+  .summary-cards  
+    display: flex 
+    flex-wrap: wrap 
+    gap: 1.5rem 
+
+    .card  
+      flex: 1 1 250px 
+      display: flex 
+      align-items: center 
+      background: #fff 
+      padding: 1rem 
+      border-radius: 10px 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) 
+      gap: 1rem 
+
+      .icon  
+        font-size: 2rem 
+        color: #4caf50 
+       
+
+      h4  
+        margin: 0 
+        font-size: 1rem 
+       
+
+      p  
+        font-size: 1.2rem 
+        font-weight: bold 
+       
+     
+   
+
+  .dashboard-middle  
+    display: flex 
+    flex-wrap: wrap 
+    gap: 1.5rem 
+
+    .chart  
+      flex: 2 
+      background: #fff 
+      border-radius: 10px 
+      padding: 1rem 
+     
+
+    .activity-feed  
+      flex: 1 
+      background: #fff 
+      border-radius: 10px 
+      padding: 1rem 
+
+      ul  
+        padding-left: 1rem 
+
+        li  
+          margin-bottom: 0.5rem 
+         
+       
+     
+   
+
+  .employee-table  
+    background: #fff 
+    border-radius: 10px 
+    padding: 1rem 
+
+    table  
+      width: 100% 
+      border-collapse: collapse 
+
+      th, td  
+        padding: 0.75rem 
+        text-align: left 
+        border-bottom: 1px solid #eee 
+       
+
+      img  
+        width: 40px 
+        height: 40px 
+        border-radius: 50% 
+       
+
+      .status  
+        padding: 0.25rem 0.5rem 
+        border-radius: 4px 
+        font-size: 0.8rem 
+        color: white 
+
+        &.active 
+          background-color: #4caf50
+        
+
+        &.on-leave 
+          background-color: #ff9800
+        
+      
+    @media (max-width: 1024px)  
+  .summary-cards  
+    flex-direction: column 
+   
+
+  .dashboard-middle  
+    flex-direction: column 
+   
+ 
+
+@media (max-width: 768px)  
+  .employee-table table  
+    font-size: 0.8rem 
+
+    th, td  
+      padding: 0.5rem 
+     
+
+    img  
+      width: 30px 
+      height: 30px 
+     
+   
+ 
+  
+

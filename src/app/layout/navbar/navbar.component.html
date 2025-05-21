@@ -1,0 +1,18 @@
+<header class="navbar">
+  <div class="left-section">
+    <input type="text" placeholder="Search..." class="search-bar" />
+  </div>
+
+  <div class="right-section">
+    <i class="fas fa-bell notification-icon"></i>
+
+    <div class="user-profile" (click)="toggleDropdown()" tabindex="0">
+      <img src="https://www.shutterstock.com/image-vector/vector-male-face-avatar-logo-600nw-426321556.jpg" alt="User Avatar" />
+
+      <div class="dropdown" *ngIf="showDropdown">
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>

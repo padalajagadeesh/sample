@@ -1,0 +1,88 @@
+<div class="dashboard-wrapper">
+
+  <!-- Summary Cards -->
+  <div class="summary-cards">
+    <div class="card">
+      <i class="fas fa-users icon"></i>
+      <div>
+        <h4>Total Employees</h4>
+        <p>128</p>
+      </div>
+    </div>
+    <div class="card">
+      <i class="fas fa-user-clock icon"></i>
+      <div>
+        <h4>Active Leaves</h4>
+        <p>6</p>
+      </div>
+    </div>
+    <div class="card">
+      <i class="fas fa-building icon"></i>
+      <div>
+        <h4>Departments</h4>
+        <p>8</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Performance Chart and Activity Feed -->
+  <div class="dashboard-middle">
+    <div class="chart">
+      <canvas id="performanceChart"></canvas>
+    </div>
+    <div class="activity-feed">
+      <h4>Recent Activity</h4>
+      <ul>
+        <li><strong>John Doe</strong> added to Engineering</li>
+        <li><strong>Alice</strong> approved leave request</li>
+        <li><strong>HR</strong> updated policy document</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Employee Table -->
+  <div class="employee-table">
+    <h4>Recent Employees</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Profile</th>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Department</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src=" https://www.shutterstock.com/image-vector/vector-male-face-avatar-logo-600nw-426321556.jpg" alt="Emp" /></td>
+          <td>Emily Clark</td>
+          <td>UI Designer</td>
+          <td>Design</td>
+          <td><span class="status active">Active</span></td>
+        </tr>
+        <tr>
+          <td><img src="https://www.shutterstock.com/image-vector/vector-male-face-avatar-logo-600nw-426321556.jpg" alt="Emp" /></td>
+          <td>Michael Smith</td>
+          <td>HR Manager</td>
+          <td>HR</td>
+          <td><span class="status on-leave">On Leave</span></td>
+        </tr>
+        <tr>
+          <td><img src=" https://www.shutterstock.com/image-vector/vector-male-face-avatar-logo-600nw-426321556.jpg" alt="Emp" /></td>
+          <td>Clark fullstack</td>
+          <td>fullstack</td>
+          <td>fullstack</td>
+          <td><span class="status active">Active</span></td>
+        </tr>
+        <tr>
+          <td><img src="https://www.shutterstock.com/image-vector/vector-male-face-avatar-logo-600nw-426321556.jpg" alt="Emp" /></td>
+          <td>Smith dev</td>
+          <td>developer</td>
+          <td>developer</td>
+          <td><span class="status on-leave">On Leave</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
