@@ -5,14 +5,13 @@
       <i class="fas" [ngClass]="{ 'fa-bars': !isCollapsed, 'fa-times': isCollapsed }"></i>
     </button>
   </div>
-
   <ul class="menu">
-    <li routerLink="/dashboard" routerLinkActive="active"><i class="fas fa-chart-line"></i> <span *ngIf="!isCollapsed">Dashboard</span></li>
-    <li routerLink="/add-user" routerLinkActive="active"><i class="fas fa-user-plus"></i> <span *ngIf="!isCollapsed">Add User</span></li>
-    <li routerLink="/employees" routerLinkActive="active"><i class="fas fa-users"></i> <span *ngIf="!isCollapsed">Manage Employees</span></li>
-    <li routerLink="/departments" routerLinkActive="active"><i class="fas fa-building"></i> <span *ngIf="!isCollapsed">Departments</span></li>
-    <li routerLink="/attendance" routerLinkActive="active"><i class="fas fa-clock"></i> <span *ngIf="!isCollapsed">Attendance</span></li>
-    <li routerLink="/leaves" routerLinkActive="active"><i class="fas fa-calendar-check"></i> <span *ngIf="!isCollapsed">Leave Requests</span></li>
-    <li routerLink="/settings" routerLinkActive="active"><i class="fas fa-cog"></i> <span *ngIf="!isCollapsed">Settings</span></li>
+    <li routerLink="/dashboard" routerLinkActive="active"><i class="fas fa-chart-line"></i> <span *ngIf="!isCollapsed || mainValue">Dashboard</span></li>
+    <li routerLink="/add-user" routerLinkActive="active"><i class="fas fa-user-plus"></i> <span *ngIf="!isCollapsed || mainValue">Add User</span></li>
+    <li routerLink="/employees" routerLinkActive="active"><i class="fas fa-users"></i> <span *ngIf="!isCollapsed || mainValue">Manage Employees</span></li>
+    <li routerLink="/departments" routerLinkActive="active"><i class="fas fa-building"></i> <span *ngIf="!isCollapsed || mainValue">Departments</span></li>
+    <li routerLink="/attendance" routerLinkActive="active"><i class="fas fa-clock"></i> <span *ngIf="!isCollapsed || mainValue">Attendance</span></li>
+    <li routerLink="/leaves" routerLinkActive="active"><i class="fas fa-calendar-check"></i> <span *ngIf="!isCollapsed || mainValue">Leave Requests</span></li>
+    <li routerLink="/settings" routerLinkActive="active"><i class="fas fa-cog"></i> <span *ngIf="!isCollapsed || mainValue">Settings</span></li>
   </ul>
 </div>
