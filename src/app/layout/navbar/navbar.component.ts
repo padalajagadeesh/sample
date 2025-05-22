@@ -4,7 +4,7 @@ import { commonService } from 'src/app/service/common.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.sass']
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavBarComponent {
   showDropdown = false;
