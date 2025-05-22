@@ -16,6 +16,10 @@ export class commonService {
     this._flag.next(value);
   }
 
+
+   setFlag2(value: boolean) {
+    this._flag.next(value);
+  }
   // Optional: to get current value without subscribing
   get currentFlag(): boolean {
     return this._flag.value;

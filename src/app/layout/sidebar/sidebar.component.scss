@@ -62,6 +62,10 @@
   }
 }
 
+  .toggle-btn2{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .sidebar {
         width: auto;
@@ -111,5 +115,10 @@
   .sideNavBar{
     display: none;
   }
+
+  .toggle-btn2{
+  display: block;
 }
+}
+
 

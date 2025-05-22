@@ -30,4 +30,9 @@ export class SideBarComponent {
       },1000)
     // }
   }
+
+  navBar(){
+    this.mainValue =true
+    this.cm.setFlag2(this.mainValue);
+  }
 }

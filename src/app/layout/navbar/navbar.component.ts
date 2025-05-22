@@ -9,6 +9,7 @@ import { commonService } from 'src/app/service/common.service';
 export class NavBarComponent {
   showDropdown = false;
   isCollapsed = false;
+  mainValue = false;
 constructor(private cm :commonService){}
   toggleDropdown() {
     this.showDropdown = !this.showDropdown;
@@ -17,6 +18,13 @@ constructor(private cm :commonService){}
   toggleSidebar() {
     this.isCollapsed = !this.isCollapsed;
     this.cm.setFlag(this.isCollapsed);
+  }
+ ngOnInit() {
+    this.cm.flag$.subscribe((value) => {
+      this.mainValue = value;
+       //this.togglevalue = !this.togglevalue;
+      console.log('Flag changed to:', value);
+    });
   }
 
 }

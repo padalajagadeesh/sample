@@ -2,7 +2,7 @@
   <div class="sidebar-header">
     <h2 *ngIf="!isCollapsed">HR Dash</h2>
     <button class="toggle-btn" (click)="toggleSidebar()">
-      <i class="fas" [ngClass]="{ 'fa-bars': !isCollapsed, 'fa-times': isCollapsed }"></i>
+      <i class="fas" [ngClass]="{ 'fa-bars': isCollapsed, 'fa-times': !isCollapsed }"></i>
     </button>
   </div>
   <ul class="menu">
